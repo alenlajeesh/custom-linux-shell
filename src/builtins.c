@@ -24,14 +24,13 @@ int handle_builtin(Command cmd){
 			}
 		}
 		return 1;
-
-		if(strcmp(cmd.args[0],"help")==0){
+	}
+	if(strcmp(cmd.args[0],"help")==0){
 			printf("myshell built-in commands:\n");
 			printf("cd <dir>\n");
 			printf("exit\n");
 			printf("help\n");
 			return 1;
 		}
-	}
 	return 0;
 }
