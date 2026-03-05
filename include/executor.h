@@ -3,6 +3,6 @@
 
 #include "parser.h"
 
-void execute_command(Pipeline pipeline);
+void execute_pipeline(Pipeline pipeline);
 
 #endif
