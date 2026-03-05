@@ -86,6 +86,13 @@ void execute_pipeline(Pipeline pipeline)
             prev_fd = pipefd[0];
         }
     }
-    for (int i = 0; i < pipeline.count; i++)
+	int background = pipeline.commands[pipeline.count-1].background;
+
+	if(!background){
+    for(int i=0;i<pipeline.count;i++)
         wait(NULL);
+	}
+	else{
+		printf("[running in background]\n");
+	}    
 }

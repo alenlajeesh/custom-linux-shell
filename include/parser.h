@@ -11,6 +11,7 @@ typedef struct{
 	char *output_file;
 
 	int append;
+	int background;
 }Command;
 
 typedef struct{
