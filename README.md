@@ -22,9 +22,10 @@ make
 ./cshell
 ```
 
-## Install
+## Install and Run
 
 ```
 ./scripts/install.sh
+cshell
 ```
 
