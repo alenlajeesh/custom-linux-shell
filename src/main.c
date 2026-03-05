@@ -2,7 +2,7 @@
 #include <string.h>
 #include "../include/parser.h"
 #include "../include/executor.h"
-
+#include "../include/builtins.h"
 #define MAX_INPUT 1024
 int main(){
 	char input[MAX_INPUT];
@@ -16,6 +16,9 @@ int main(){
 			break;
 		}
 		Command cmd=parse_input(input);
+		if(handle_builtin(cmd)){
+			continue;
+		}
 		execute_command(cmd);
 	}
 

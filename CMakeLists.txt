@@ -10,4 +10,5 @@ add_executable(cshell
 	src/main.c
 	src/parser.c
 	src/executor.c
+	src/builtins.c
 )
