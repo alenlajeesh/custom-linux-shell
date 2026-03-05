@@ -10,7 +10,7 @@ int main()
     char input[MAX_INPUT];
     while (1)
     {
-        printf("myshell> ");
+        printf("shell> ");
         if (!fgets(input, MAX_INPUT, stdin))
             break;
         Pipeline pipeline = parse_input(input);
