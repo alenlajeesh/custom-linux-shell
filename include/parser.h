@@ -6,6 +6,11 @@
 
 typedef struct{
 	char *args[MAX_ARGS];
+	
+	char *input_file;
+	char *output_file;
+
+	int append;
 }Command;
 
 typedef struct{
