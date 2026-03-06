@@ -138,6 +138,7 @@ After installation:
 ```
 cshell
 ```
+## Example
 
 To uninstall:
 
